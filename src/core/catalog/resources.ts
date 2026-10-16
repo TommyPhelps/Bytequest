@@ -283,7 +283,7 @@ export const RESOURCES: Resource[] = [
   },
   {
     id: "mdn-http", title: "MDN Web Docs: HTTP", provider: "Mozilla", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP",
-    kind: "docs", access: "free", accessNote: "Free.",
+    kind: "docs", access: "free", accessNote: "Free, no account needed.",
     disciplines: ["networking", "security"], concepts: ["http"],
     level: "all", handsOn: 1, prerequisites: "None.", why: "Clear reference for methods, headers, status codes and cookies.", curatedOn: CURATED,
   },

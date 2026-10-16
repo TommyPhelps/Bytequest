@@ -152,7 +152,10 @@ export interface MissionTemplate {
   recall: RecallPrompt[];
   extensions: string[];
   resources: string[];
+  /** Name of a generator in src/core/gen (seeded parameters, files, answer key). */
   generator?: string;
+  /** Simple seeded choices: each key picks one option into {{key}}. */
+  vary?: Record<string, readonly string[]>;
 }
 
 export interface GenFile {

@@ -72,7 +72,7 @@ export function Resources({ concept, discipline }: { concept?: string; disciplin
                   <td className="small">{ACCESS_LABEL[r.access]}<div className="dim">{r.accessNote}</div></td>
                   <td>{r.level}</td>
                   <td className="num">{"■".repeat(r.handsOn)}{"□".repeat(3 - r.handsOn)}</td>
-                  <td className="small">{s ? <span className={s.ok ? "ok" : "err"}>{s.ok ? "OK" : `FAIL ${s.status ?? ""}`}<div className="dim">{s.checkedAt.slice(0, 10)}</div>{s.error && <div className="dim">{s.error}</div>}</span> : <span className="dim">not checked</span>}</td>
+                  <td className="small">{s ? <span className={s.ok ? "ok" : s.status === 403 || s.status === 429 ? "warn" : "err"} title={s.status === 403 || s.status === 429 ? "The site refused an automated request (often bot protection). It usually opens fine in a browser." : undefined}>{s.ok ? "OK" : s.status === 403 || s.status === 429 ? `BLOCKED ${s.status}` : `FAIL ${s.status ?? ""}`}<div className="dim">{s.checkedAt.slice(0, 10)}</div>{s.error && <div className="dim">{s.error}</div>}</span> : <span className="dim">not checked</span>}</td>
                   <td><button className="btn small" onClick={() => openExternal(r.url).catch((e) => toast(String(e), "err"))}>Open ↗</button></td>
                 </tr>
               );
@@ -80,7 +80,7 @@ export function Resources({ concept, discipline }: { concept?: string; disciplin
           </tbody>
         </table>
       ) : <Empty title="NO MATCHES">Clear a filter to see more.</Empty>}
-      <div className="small dim">Every entry was curated by hand on {RESOURCES[0].curatedOn}; "Access" describes the provider's terms at curation time. Link checks only confirm the page answers; they don't re-verify pricing. Video discovery with thumbnails is planned for a later phase.</div>
+      <div className="small dim">Every entry was curated by hand on {RESOURCES[0].curatedOn}; "Access" describes the provider's terms at curation time. Link checks only confirm the page answers ("BLOCKED 403" usually means bot protection refused the automated request, not that the page is gone); they don't re-verify pricing. Video discovery with thumbnails is planned for a later phase.</div>
     </div>
   );
 }

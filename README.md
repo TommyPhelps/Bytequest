@@ -77,7 +77,7 @@ Adding a mission means appending a `MissionTemplate` to a file in `src/core/miss
 - **Cybersecurity has no hands-on missions yet.** Its subject region, concepts and curated authorized practice platforms (PortSwigger Academy, OverTheWire, picoCTF, OWASP Juice Shop) are in place; custom security missions are deferred.
 - Apprentice and Nightmare variants are sparse. When a mission lacks the requested tier, the board shows the nearest one and says so.
 - The knowledge map is a region grid plus concept links, not yet a zoomable graph. Diagrams are static (some draw the rolled numbers); interactive simulations come later.
-- Resource "access" notes are curated, not verified live. The link checker only confirms that a page answers. There's no live video discovery yet.
+- Resource "access" notes are curated, not verified live. The link checker only confirms that a page answers. In the first CI link check (2026-10-16), 35 of 38 links answered; OSDev Wiki and Raspberry Pi Docs returned 403 to the datacenter bot (bot protection), and Linux Journey had moved to LabEx (catalog updated). There's no live video discovery yet.
 - No AI-assisted mission generation yet. The core generator is entirely offline.
 
 ## Next priorities

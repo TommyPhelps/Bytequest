@@ -13,7 +13,7 @@ eater.net
 exercism.org
 godbolt.org
 karpathy.ai
-linuxjourney.com
+labex.io
 missing.csail.mit.edu
 ocw.mit.edu
 overthewire.org

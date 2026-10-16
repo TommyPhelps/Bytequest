@@ -84,8 +84,8 @@ export const RESOURCES: Resource[] = [
     level: "all", handsOn: 3, prerequisites: "Basic syntax of the chosen language.", why: "Test-driven exercises in 70+ languages, solvable locally with their CLI, plus optional human mentoring.", curatedOn: CURATED,
   },
   {
-    id: "linux-journey", title: "Linux Journey", provider: "Linux Journey", url: "https://linuxjourney.com/",
-    kind: "course", access: "free", accessNote: "Free reading; check the link status, as the site has changed hands.",
+    id: "linux-journey", title: "Linux Journey (now hosted by LabEx)", provider: "LabEx", url: "https://labex.io/linuxjourney",
+    kind: "course", access: "free-core", accessNote: "linuxjourney.com now redirects here. The lessons are readable; LabEx also sells paid plans, so check what a lab needs before signing up.",
     disciplines: ["os"], concepts: ["cli", "linux-fs", "processes", "logs"],
     level: "beginner", handsOn: 2, prerequisites: "None.", why: "Short, well-ordered lessons on the Linux command line and system internals.", curatedOn: CURATED,
   },

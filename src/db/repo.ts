@@ -33,7 +33,7 @@ export const DEFAULT_SETTINGS: Settings = {
   theme: "phosphor",
   density: "comfortable",
   textScale: 1,
-  defaultTier: "apprentice",
+  defaultTier: "operator",
   hintLevel: "standard",
   labRoot: "",
   editor: "vscode",

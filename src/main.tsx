@@ -1,7 +1,12 @@
 import { createRoot } from "react-dom/client";
+import "./fonts.ts";
+import "./styles/app.css";
+import { AppProvider } from "./state/store.tsx";
+import { App } from "./App.tsx";
+import { tauriDriver } from "./platform/native.ts";
 
-function Boot() {
-  return <pre style={{ color: "#52ff8c", font: "16px monospace", padding: 24 }}>BYTEQUEST.EXE // SYSTEM READY (scaffold build)</pre>;
-}
-
-createRoot(document.getElementById("root")!).render(<Boot />);
+createRoot(document.getElementById("root")!).render(
+  <AppProvider db={tauriDriver}>
+    <App />
+  </AppProvider>,
+);

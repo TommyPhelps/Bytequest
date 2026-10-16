@@ -1,0 +1,336 @@
+
+> bytequest@0.1.0 test
+> node --test "tests/*.test.ts"
+
+TAP version 13
+# (node:8320) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: export excludes credentials
+ok 1 - export excludes credentials
+  ---
+  duration_ms: 226.3588
+  type: 'test'
+  ...
+# Subtest: round trip restores everything into an empty database
+ok 2 - round trip restores everything into an empty database
+  ---
+  duration_ms: 13.7382
+  type: 'test'
+  ...
+# Subtest: restore replaces data but keeps local credentials
+ok 3 - restore replaces data but keeps local credentials
+  ---
+  duration_ms: 7.3258
+  type: 'test'
+  ...
+# Subtest: bad files are rejected before anything changes
+ok 4 - bad files are rejected before anything changes
+  ---
+  duration_ms: 18.7861
+  type: 'test'
+  ...
+# Subtest: a restore that fails midway changes nothing
+ok 5 - a restore that fails midway changes nothing
+  ---
+  duration_ms: 8.3016
+  type: 'test'
+  ...
+# Subtest: unknown or hostile column names are ignored
+ok 6 - unknown or hostile column names are ignored
+  ---
+  duration_ms: 5.3282
+  type: 'test'
+  ...
+# Subtest: inspect reports counts; file name is filesystem safe
+ok 7 - inspect reports counts; file name is filesystem safe
+  ---
+  duration_ms: 4.0137
+  type: 'test'
+  ...
+# Subtest: rng is reproducible and seeds round-trip
+ok 8 - rng is reproducible and seeds round-trip
+  ---
+  duration_ms: 2.8856
+  type: 'test'
+  ...
+# Subtest: subnet math matches known answers
+ok 9 - subnet math matches known answers
+  ---
+  duration_ms: 7.5904
+  type: 'test'
+  ...
+# Subtest: VLSM allocations never overlap and fit the block
+ok 10 - VLSM allocations never overlap and fit the block
+  ---
+  duration_ms: 0.7175
+  type: 'test'
+  ...
+# Subtest: DNS query packet layout is correct
+ok 11 - DNS query packet layout is correct
+  ---
+  duration_ms: 0.8407
+  type: 'test'
+  ...
+# Subtest: adder flags
+ok 12 - adder flags
+  ---
+  duration_ms: 0.4277
+  type: 'test'
+  ...
+# Subtest: minimal SOP is equivalent to the truth table
+ok 13 - minimal SOP is equivalent to the truth table
+  ---
+  duration_ms: 37.7966
+  type: 'test'
+  ...
+# Subtest: BQ-8 reference CPU runs a hand-written program
+ok 14 - BQ-8 reference CPU runs a hand-written program
+  ---
+  duration_ms: 4.0867
+  type: 'test'
+  ...
+# Subtest: generated mazes are solvable
+ok 15 - generated mazes are solvable
+  ---
+  duration_ms: 106.9889
+  type: 'test'
+  ...
+# Subtest: morse and resistor helpers
+ok 16 - morse and resistor helpers
+  ---
+  duration_ms: 1.1658
+  type: 'test'
+  ...
+# Subtest: every generator works for every tier and is pure
+ok 17 - every generator works for every tier and is pure
+  ---
+  duration_ms: 119.9691
+  type: 'test'
+  ...
+# Subtest: the whole library passes validation
+ok 18 - the whole library passes validation
+  ---
+  duration_ms: 167.7975
+  type: 'test'
+  ...
+# Subtest: library covers several disciplines
+ok 19 - library covers several disciplines
+  ---
+  duration_ms: 0.4437
+  type: 'test'
+  ...
+# Subtest: validator catches an incomplete mission
+ok 20 - validator catches an incomplete mission
+  ---
+  duration_ms: 0.5037
+  type: 'test'
+  ...
+# Subtest: instantiation is deterministic for a seed
+ok 21 - instantiation is deterministic for a seed
+  ---
+  duration_ms: 10.7019
+  type: 'test'
+  ...
+# Subtest: rerolling the seed changes generated missions (not just the name)
+ok 22 - rerolling the seed changes generated missions (not just the name)
+  ---
+  duration_ms: 20.9773
+  type: 'test'
+  ...
+# Subtest: difficulty changes technical demands, steps and time
+ok 23 - difficulty changes technical demands, steps and time
+  ---
+  duration_ms: 10.6671
+  type: 'test'
+  ...
+# Subtest: a missing tier resolves to the nearest one and says so
+ok 24 - a missing tier resolves to the nearest one and says so
+  ---
+  duration_ms: 19.0506
+  type: 'test'
+  ...
+# Subtest: generated answer keys are present and differ between tiers where the generator scales
+ok 25 - generated answer keys are present and differ between tiers where the generator scales
+  ---
+  duration_ms: 1.287
+  type: 'test'
+  ...
+# Subtest: filters: time, Linux, hardware, offline and language
+ok 26 - filters: time, Linux, hardware, offline and language
+  ---
+  duration_ms: 1.4848
+  type: 'test'
+  ...
+# Subtest: preferred language is used when the mission supports it
+ok 27 - preferred language is used when the mission supports it
+  ---
+  duration_ms: 1.0052
+  type: 'test'
+  ...
+# Subtest: readiness separates exposure, self-report and demonstrated skill
+ok 28 - readiness separates exposure, self-report and demonstrated skill
+  ---
+  duration_ms: 0.4819
+  type: 'test'
+  ...
+# Subtest: recommendations prefer ready prerequisites, starred subjects and avoid repeats
+ok 29 - recommendations prefer ready prerequisites, starred subjects and avoid repeats
+  ---
+  duration_ms: 1.151
+  type: 'test'
+  ...
+# Subtest: roll is deterministic, respects locks and can exclude the current mission
+ok 30 - roll is deterministic, respects locks and can exclude the current mission
+  ---
+  duration_ms: 1.4951
+  type: 'test'
+  ...
+# Subtest: many rerolls surface many different missions
+ok 31 - many rerolls surface many different missions
+  ---
+  duration_ms: 40.5525
+  type: 'test'
+  ...
+# (node:2600) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: migrations: fresh database reaches the latest version and re-running is a no-op
+ok 32 - migrations: fresh database reaches the latest version and re-running is a no-op
+  ---
+  duration_ms: 6.5693
+  type: 'test'
+  ...
+# Subtest: migrations: a later migration upgrades existing data in place
+ok 33 - migrations: a later migration upgrades existing data in place
+  ---
+  duration_ms: 2.5682
+  type: 'test'
+  ...
+# Subtest: migrations: refuse to downgrade and refuse gaps
+ok 34 - migrations: refuse to downgrade and refuse gaps
+  ---
+  duration_ms: 3.5287
+  type: 'test'
+  ...
+# Subtest: migrations: a failing migration leaves no trace
+ok 35 - migrations: a failing migration leaves no trace
+  ---
+  duration_ms: 3.5703
+  type: 'test'
+  ...
+# Subtest: settings: defaults, round trip, unknown keys ignored
+ok 36 - settings: defaults, round trip, unknown keys ignored
+  ---
+  duration_ms: 2.475
+  type: 'test'
+  ...
+# Subtest: starting a mission records exposure, not mastery
+ok 37 - starting a mission records exposure, not mastery
+  ---
+  duration_ms: 9.4391
+  type: 'test'
+  ...
+# Subtest: completion requires every verification criterion, then records demonstrated skill, reviews and journal
+ok 38 - completion requires every verification criterion, then records demonstrated skill, reviews and journal
+  ---
+  duration_ms: 5.9965
+  type: 'test'
+  ...
+# Subtest: shelving is not a penalty and can be undone
+ok 39 - shelving is not a penalty and can be undone
+  ---
+  duration_ms: 3.0096
+  type: 'test'
+  ...
+# Subtest: evidence log and run deletion cascade
+ok 40 - evidence log and run deletion cascade
+  ---
+  duration_ms: 3.4181
+  type: 'test'
+  ...
+# Subtest: recall scheduling: grows on success, resets on miss, postpone keeps the interval
+ok 41 - recall scheduling: grows on success, resets on miss, postpone keeps the interval
+  ---
+  duration_ms: 3.5845
+  type: 'test'
+  ...
+# Subtest: journal search, update, export
+ok 42 - journal search, update, export
+  ---
+  duration_ms: 2.2984
+  type: 'test'
+  ...
+# Subtest: stats count only real completed work
+ok 43 - stats count only real completed work
+  ---
+  duration_ms: 25.5585
+  type: 'test'
+  ...
+# Subtest: resource catalog entries are complete and use HTTPS
+ok 44 - resource catalog entries are complete and use HTTPS
+  ---
+  duration_ms: 1.5715
+  type: 'test'
+  ...
+# Subtest: resource filtering
+ok 45 - resource filtering
+  ---
+  duration_ms: 1.6709
+  type: 'test'
+  ...
+# Subtest: link checker host allowlist is exactly the catalog's hosts
+ok 46 - link checker host allowlist is exactly the catalog's hosts
+  ---
+  duration_ms: 0.7046
+  type: 'test'
+  ...
+# Subtest: offline: the core never touches the network
+ok 47 - offline: the core never touches the network
+  ---
+  duration_ms: 39.0872
+  type: 'test'
+  ...
+# Subtest: safe names mirror the Rust rules
+ok 48 - safe names mirror the Rust rules
+  ---
+  duration_ms: 0.8658
+  type: 'test'
+  ...
+# Subtest: mission folders and generated files are safe names
+ok 49 - mission folders and generated files are safe names
+  ---
+  duration_ms: 6.7397
+  type: 'test'
+  ...
+# Subtest: system-changing commands are flagged for confirmation
+ok 50 - system-changing commands are flagged for confirmation
+  ---
+  duration_ms: 0.7631
+  type: 'test'
+  ...
+# Subtest: every prerequisite points at a real concept
+ok 51 - every prerequisite points at a real concept
+  ---
+  duration_ms: 1.9627
+  type: 'test'
+  ...
+# Subtest: concept graph is acyclic
+ok 52 - concept graph is acyclic
+  ---
+  duration_ms: 0.7028
+  type: 'test'
+  ...
+# Subtest: every concept belongs to a known discipline
+ok 53 - every concept belongs to a known discipline
+  ---
+  duration_ms: 0.3361
+  type: 'test'
+  ...
+1..53
+# tests 53
+# suites 0
+# pass 53
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1341.9931

@@ -1,0 +1,20 @@
+[1m[92m   Compiling[0m labfs v0.1.0 (D:\a\Bytequest\Bytequest\src-tauri\labfs)
+[1m[92m    Finished[0m `test` profile [unoptimized + debuginfo] target(s) in 2.19s
+[1m[92m     Running[0m unittests src\lib.rs (src-tauri\labfs\target\debug\deps\labfs-4d66f4c446ba5bf0.exe)
+
+running 6 tests
+test tests::root_rules ... ok
+test tests::join_stays_inside ... ok
+test tests::open_target_rules ... ok
+test tests::safe_name_check ... ok
+test tests::sanitizes_names ... ok
+test tests::never_overwrites_by_default ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+[1m[92m   Doc-tests[0m labfs
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

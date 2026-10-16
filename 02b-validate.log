@@ -1,0 +1,7 @@
+
+> bytequest@0.1.0 validate
+> node tools/validate-missions.ts
+
+subjects OK: 89 concepts, no cycles
+missions: 24 templates, 75 tier variants (rookie 22, apprentice 3, operator 24, expert 24, nightmare 2), 15 with seeded generators
+missions OK

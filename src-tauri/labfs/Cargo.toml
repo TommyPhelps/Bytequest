@@ -1,0 +1,7 @@
+[package]
+name = "labfs"
+version = "0.1.0"
+edition = "2021"
+description = "Path safety rules for the BYTEQUEST project lab"
+
+[dependencies]

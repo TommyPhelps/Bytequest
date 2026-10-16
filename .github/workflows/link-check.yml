@@ -1,0 +1,32 @@
+name: Link check
+
+# Checks that every curated resource link still answers. Weekly, or on demand
+# (Actions tab -> Link check -> Run workflow). The report is saved to the
+# 'link-report' branch; it never changes the catalog by itself.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 9 * * 1"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check links
+        run: node tools/link-check.ts | tee report.txt
+      - name: Save report to link-report branch
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cp report.txt "$RUNNER_TEMP/report.txt" || true
+          cd "$RUNNER_TEMP" && rm -rf r && mkdir r && cd r && git init -q && cp ../report.txt .
+          git -c user.name=bytequest-ci -c user.email=bytequest-ci@users.noreply.github.com add .
+          git -c user.name=bytequest-ci -c user.email=bytequest-ci@users.noreply.github.com commit -qm "link report ${GITHUB_RUN_NUMBER}"
+          git push -qf "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:refs/heads/link-report

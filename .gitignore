@@ -1,0 +1,11 @@
+node_modules/
+dist/
+dist-preview/
+src-tauri/target/
+src-tauri/labfs/target/
+src-tauri/labfs/Cargo.lock
+src-tauri/gen/
+*.log
+.DS_Store
+# Personal backups stay off GitHub.
+bytequest-backup-*.json

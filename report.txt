@@ -1,0 +1,47 @@
+BYTEQUEST link check 2026-10-26T16:08:50.884Z
+checked=38 ok=35 failed=3
+
+FAILED:
+  linux-journey  403  https://labex.io/linuxjourney  
+  osdev  403  https://wiki.osdev.org/  
+  rpi-docs  403  https://www.raspberrypi.com/documentation/  
+
+ALL:
+OK   200  cs50                   https://cs50.harvard.edu/x/
+OK   200  odin                   https://www.theodinproject.com/
+OK   200  exercism               https://exercism.org/
+FAIL 403  linux-journey          https://labex.io/linuxjourney
+OK   200  overthewire            https://overthewire.org/wargames/
+OK   200  portswigger            https://portswigger.net/web-security
+OK   200  picoctf                https://picoctf.org/
+OK   200  nand2tetris            https://www.nand2tetris.org/
+FAIL 403  osdev                  https://wiki.osdev.org/
+OK   200  wokwi                  https://wokwi.com/
+OK   200  falstad                https://www.falstad.com/circuit/
+OK   200  khan                   https://www.khanacademy.org/
+OK   200  3b1b                   https://www.3blue1brown.com/
+OK   200  godot-docs             https://docs.godotengine.org/en/stable/
+OK   200  gdquest                https://www.gdquest.com/
+OK   200  netacad                https://www.netacad.com/
+OK   200  wireshark-docs         https://www.wireshark.org/docs/
+OK   200  mit-ocw                https://ocw.mit.edu/
+OK   200  fcc                    https://www.freecodecamp.org/
+OK   200  missing-semester       https://missing.csail.mit.edu/
+OK   200  ostep                  https://pages.cs.wisc.edu/~remzi/OSTEP/
+OK   200  beej-net               https://beej.us/guide/bgnet/
+OK   200  crafting-interpreters  https://craftinginterpreters.com/
+OK   200  rust-book              https://doc.rust-lang.org/book/
+OK   200  python-docs            https://docs.python.org/3/
+OK   200  godbolt                https://godbolt.org/
+OK   200  circuitverse           https://circuitverse.org/
+OK   200  ben-eater              https://eater.net/
+OK   200  sqlbolt                https://sqlbolt.com/
+OK   200  sqlite-docs            https://www.sqlite.org/docs.html
+OK   200  cryptopals             https://cryptopals.com/
+OK   200  arduino-docs           https://docs.arduino.cc/
+FAIL 403  rpi-docs               https://www.raspberrypi.com/documentation/
+OK   200  juice-shop             https://owasp.org/www-project-juice-shop/  ->  https://owasp.org/projects/juice-shop
+OK   200  red-blob               https://www.redblobgames.com/
+OK   200  docker-docs            https://docs.docker.com/get-started/
+OK   200  mdn-http               https://developer.mozilla.org/en-US/docs/Web/HTTP
+OK   200  karpathy-zth           https://karpathy.ai/zero-to-hero.html
